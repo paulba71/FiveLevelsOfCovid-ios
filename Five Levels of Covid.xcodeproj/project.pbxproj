@@ -13,6 +13,8 @@
 		CA57569D253D7580003AB25D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA57569B253D7580003AB25D /* Main.storyboard */; };
 		CA57569F253D758A003AB25D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA57569E253D758A003AB25D /* Assets.xcassets */; };
 		CA5756A2253D758A003AB25D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5756A0253D758A003AB25D /* LaunchScreen.storyboard */; };
+		CA5756AB253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5756AA253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift */; };
+		CA5756AE253DBA48003AB25D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5756AD253DBA48003AB25D /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CA57569E253D758A003AB25D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5756A1253D758A003AB25D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5756A3253D758A003AB25D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5756AA253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailCellTableViewCell.swift; sourceTree = "<group>"; };
+		CA5756AD253DBA48003AB25D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CA57569E253D758A003AB25D /* Assets.xcassets */,
 				CA5756A0253D758A003AB25D /* LaunchScreen.storyboard */,
 				CA5756A3253D758A003AB25D /* Info.plist */,
+				CA5756AA253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift */,
+				CA5756AD253DBA48003AB25D /* DataModel.swift */,
 			);
 			path = "Five Levels of Covid";
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5756AE253DBA48003AB25D /* DataModel.swift in Sources */,
 				CA57569A253D7580003AB25D /* ViewController.swift in Sources */,
 				CA575696253D7580003AB25D /* AppDelegate.swift in Sources */,
 				CA575698253D7580003AB25D /* SceneDelegate.swift in Sources */,
+				CA5756AB253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBarnes.Five-Levels-of-Covid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PaulBarnes.Five-Levels-of-Covid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
