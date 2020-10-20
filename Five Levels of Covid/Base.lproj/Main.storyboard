@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhT-SD-USb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhT-SD-USb">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -45,9 +45,9 @@
                                                         <constraint firstAttribute="height" constant="110" id="qdT-kD-61B"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-eS-AOe">
-                                                    <rect key="frame" x="113" y="3" width="298" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-eS-AOe">
+                                                    <rect key="frame" x="113" y="3" width="298" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -63,7 +63,7 @@
                                                 <constraint firstItem="iSK-X2-7yH" firstAttribute="trailing" secondItem="v1R-ib-Mdd" secondAttribute="trailingMargin" constant="3" id="2FJ-wz-yfT"/>
                                                 <constraint firstItem="iSK-X2-7yH" firstAttribute="leading" secondItem="LOK-OY-WUa" secondAttribute="trailing" constant="3" id="Iah-uZ-cLq"/>
                                                 <constraint firstItem="IOr-eS-AOe" firstAttribute="leading" secondItem="LOK-OY-WUa" secondAttribute="trailing" constant="3" id="JPc-by-fQb"/>
-                                                <constraint firstItem="IOr-eS-AOe" firstAttribute="top" secondItem="v1R-ib-Mdd" secondAttribute="top" constant="3" id="PbS-nt-3cl"/>
+                                                <constraint firstItem="IOr-eS-AOe" firstAttribute="top" secondItem="v1R-ib-Mdd" secondAttribute="top" constant="1" id="PbS-nt-3cl"/>
                                                 <constraint firstAttribute="trailing" secondItem="IOr-eS-AOe" secondAttribute="trailing" constant="3" id="RpJ-sc-3g4"/>
                                                 <constraint firstItem="iSK-X2-7yH" firstAttribute="top" secondItem="v1R-ib-Mdd" secondAttribute="topMargin" constant="10" id="dU4-UC-oB3"/>
                                                 <constraint firstItem="LOK-OY-WUa" firstAttribute="leading" secondItem="v1R-ib-Mdd" secondAttribute="leading" id="rgH-W1-x1z"/>
@@ -152,31 +152,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-te-U4m">
-                                <rect key="frame" x="20" y="125" width="120" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-te-U4m">
+                                <rect key="frame" x="10" y="125" width="118.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Level 5  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Nx-VIH">
-                                <rect key="frame" x="148" y="117" width="104" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting from: Midnight Wed 21 October " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rv-Ys-V9t">
+                                <rect key="frame" x="10" y="162" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Level 5  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Nx-VIH">
+                                <rect key="frame" x="138" y="117" width="104" height="29"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country wide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvU-Jp-sSZ">
-                                <rect key="frame" x="274" y="121" width="120" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country wide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvU-Jp-sSZ">
+                                <rect key="frame" x="251.5" y="125" width="109" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running to : Midnight Wed 2 December " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-6T-bEp">
+                                <rect key="frame" x="10" y="191" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9w-zT-Ziz">
+                                <rect key="frame" x="10" y="241" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wfs-tv-CrU">
+                                <rect key="frame" x="20" y="270" width="374" height="592"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Placing the country at Level 5 Restrictions will have the following implications:
+•	people are asked to stay at home. People should work from home unless providing an essential service for which their physical presence is required (see below for essential services)
+•	people will be permitted to exercise within a radius of 5 km of their home
+•	there will be a penalty for movement outside 5km of home, with exemptions to this for essential work and essential purposes (see notes to editors)
+•	in line with current NPHET advice in respect of Level 5, schools, early learning and childcare services will continue to remain open and are deemed essential
+•	in addition, in recognition of the impact on children and young people of restrictions, non-contact training can continue for school aged children, outdoors in pods of 15. All other training activities should be individual only, with some exemptions, see below
+•	there should be no visits to other people’s homes or gardens
+•	however, there will be the concept of an extended household (or support bubble) for defined categories of individuals to support those at risk of social isolation and/or mental ill-health (see notes to editors)
+•	no social/family gatherings should take place, with the exemptions to this for weddings and funerals (see below)
+•	it is possible to meet with one other household in an outdoor setting which is not a home or garden, such as a park, including for exercise
+•	there should be no organised indoor or outdoor events
+•	essential retail and essential services will remain open (see below)
+•	public transport will operate at 25% capacity for the purposes of allowing those providing essential services to get to work [School transport unaffected]
+•	in line with current NPHET advice in respect of Level 5, professional, elite sports and inter-county Gaelic games, horse-racing and greyhound racing can continue behind closed doors
+•	bars, cafes, restaurants and wet pubs may provide take-away and delivery services only. Wet pubs in Dublin remain closed
+•	hotels, guesthouses and B&amp;Bs may remain open, but only to support provision of essential services
+•	those aged over 70 and the medically vulnerable are advised to continue to exercise personal judgement. It is recommended that they stay at home as much as possible, limit engagement to a very small network for short periods of time, while remaining physically distanced. When taking exercise outdoors, it is important to maintain 2 metres distance from others and wash hands on returning home. It is recommended to shop during designated hours only, while wearing a face covering, and to avoid public transport
+•	religious services will be available online
+•	museums, galleries and other cultural attractions will remain closed
+•	libraries will be available for online services only
+•	outdoor playgrounds, play areas and parks will remain open with protective measures
+•	visits to Long Term Residential Care facilities are suspended with the exception of visits required for critical and compassionate circumstances
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rbf-Ya-9Nq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YvU-Jp-sSZ" firstAttribute="leading" secondItem="Zdl-Nx-VIH" secondAttribute="trailing" constant="9.5" id="AOH-fI-FsR"/>
+                            <constraint firstItem="YvU-Jp-sSZ" firstAttribute="top" secondItem="rbf-Ya-9Nq" secondAttribute="top" constant="37" id="Atb-jb-dsg"/>
+                            <constraint firstItem="P9w-zT-Ziz" firstAttribute="leading" secondItem="rbf-Ya-9Nq" secondAttribute="leading" constant="10" id="FY0-gx-E9N"/>
+                            <constraint firstItem="wfs-tv-CrU" firstAttribute="leading" secondItem="rbf-Ya-9Nq" secondAttribute="leading" constant="20" id="KF2-SJ-rv8"/>
+                            <constraint firstItem="gzI-te-U4m" firstAttribute="top" secondItem="rbf-Ya-9Nq" secondAttribute="top" constant="37" id="KMe-AQ-pq7"/>
+                            <constraint firstItem="2Rv-Ys-V9t" firstAttribute="top" secondItem="gzI-te-U4m" secondAttribute="bottom" constant="16" id="Ndz-Fb-chX"/>
+                            <constraint firstItem="rbf-Ya-9Nq" firstAttribute="trailing" secondItem="P9w-zT-Ziz" secondAttribute="trailing" constant="10" id="ON1-QV-v1p"/>
+                            <constraint firstItem="gzI-te-U4m" firstAttribute="leading" secondItem="rbf-Ya-9Nq" secondAttribute="leading" constant="10" id="Tea-FH-JOr"/>
+                            <constraint firstItem="2Rv-Ys-V9t" firstAttribute="leading" secondItem="rbf-Ya-9Nq" secondAttribute="leading" constant="10" id="Vfc-Ke-f1F"/>
+                            <constraint firstItem="b7B-6T-bEp" firstAttribute="leading" secondItem="rbf-Ya-9Nq" secondAttribute="leading" constant="10" id="bfE-Xp-Fzj"/>
+                            <constraint firstItem="Zdl-Nx-VIH" firstAttribute="top" secondItem="rbf-Ya-9Nq" secondAttribute="top" constant="29" id="cYd-zK-Ch3"/>
+                            <constraint firstItem="P9w-zT-Ziz" firstAttribute="top" secondItem="b7B-6T-bEp" secondAttribute="bottom" constant="29" id="eAa-Al-oq5"/>
+                            <constraint firstItem="wfs-tv-CrU" firstAttribute="bottom" secondItem="rbf-Ya-9Nq" secondAttribute="bottom" id="eWt-ao-PTi"/>
+                            <constraint firstItem="rbf-Ya-9Nq" firstAttribute="trailing" secondItem="b7B-6T-bEp" secondAttribute="trailing" constant="10" id="epS-Eo-NcP"/>
+                            <constraint firstItem="rbf-Ya-9Nq" firstAttribute="trailing" secondItem="wfs-tv-CrU" secondAttribute="trailing" constant="20" id="frp-Er-rWQ"/>
+                            <constraint firstItem="Zdl-Nx-VIH" firstAttribute="leading" secondItem="gzI-te-U4m" secondAttribute="trailing" constant="9.5" id="o51-ME-jYL"/>
+                            <constraint firstItem="b7B-6T-bEp" firstAttribute="top" secondItem="2Rv-Ys-V9t" secondAttribute="bottom" constant="8" symbolic="YES" id="qqR-4h-Ulk"/>
+                            <constraint firstItem="wfs-tv-CrU" firstAttribute="top" secondItem="P9w-zT-Ziz" secondAttribute="bottom" constant="8" symbolic="YES" id="yQA-In-c8I"/>
+                            <constraint firstItem="rbf-Ya-9Nq" firstAttribute="trailing" secondItem="2Rv-Ys-V9t" secondAttribute="trailing" constant="10" id="zQX-OV-rdb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5GZ-wm-9bZ"/>
                 </viewController>
@@ -205,6 +278,9 @@
     </scenes>
     <resources>
         <image name="Visitors" width="128" height="131"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
