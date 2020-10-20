@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0792C01253ED1B300BB114A /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0792C00253ED1B300BB114A /* MoreInfoViewController.swift */; };
 		CA575696253D7580003AB25D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA575695253D7580003AB25D /* AppDelegate.swift */; };
 		CA575698253D7580003AB25D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA575697253D7580003AB25D /* SceneDelegate.swift */; };
 		CA57569A253D7580003AB25D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA575699253D7580003AB25D /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0792C00253ED1B300BB114A /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		CA575692253D7580003AB25D /* Five Levels of Covid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Five Levels of Covid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA575695253D7580003AB25D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA575697253D7580003AB25D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0792C03253ED1CC00BB114A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA575699253D7580003AB25D /* ViewController.swift */,
+				A0792C00253ED1B300BB114A /* MoreInfoViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CA575689253D7580003AB25D = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +71,9 @@
 		CA575694253D7580003AB25D /* Five Levels of Covid */ = {
 			isa = PBXGroup;
 			children = (
+				A0792C03253ED1CC00BB114A /* View Controllers */,
 				CA575695253D7580003AB25D /* AppDelegate.swift */,
 				CA575697253D7580003AB25D /* SceneDelegate.swift */,
-				CA575699253D7580003AB25D /* ViewController.swift */,
 				CA57569B253D7580003AB25D /* Main.storyboard */,
 				CA57569E253D758A003AB25D /* Assets.xcassets */,
 				CA5756A0253D758A003AB25D /* LaunchScreen.storyboard */,
@@ -146,6 +157,7 @@
 				CA5756AE253DBA48003AB25D /* DataModel.swift in Sources */,
 				CA57569A253D7580003AB25D /* ViewController.swift in Sources */,
 				CA575696253D7580003AB25D /* AppDelegate.swift in Sources */,
+				A0792C01253ED1B300BB114A /* MoreInfoViewController.swift in Sources */,
 				CA575698253D7580003AB25D /* SceneDelegate.swift in Sources */,
 				CA5756AB253DB8A3003AB25D /* ItemDetailCellTableViewCell.swift in Sources */,
 			);

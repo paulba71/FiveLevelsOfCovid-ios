@@ -86,8 +86,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
+    
         theTable.delegate = self
         theTable.dataSource = self
         theTable.rowHeight=110.0
@@ -109,7 +108,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             levelColour = UIColor.systemRed
         case 5:
             levelColour = UIColor.init(hex: "#980000ff")
-            
         default:
             levelColour = UIColor.systemGreen
         }
@@ -122,6 +120,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
 
+    @IBOutlet weak var titleLabel: UILabel!
 
     @IBAction func Click1(_ sender: Any) {
         level=1
@@ -137,7 +136,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         titleLabel.text="Level 2"
     }
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBAction func Click3(_ sender: Any) {
         level=3
         setColours(level: 3)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GhT-SD-USb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0n-Lg-YAj">
-                                <rect key="frame" x="0.0" y="44" width="414" height="73"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="73"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="d3Q-bz-yoI"/>
@@ -26,49 +26,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwv-ui-5YE">
-                                <rect key="frame" x="0.0" y="845" width="421" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="1" id="wLR-D5-XOo">
-                                        <connections>
-                                            <action selector="Click1:" destination="BYZ-38-t0r" id="Jn4-B8-wBW"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oSL-so-7GL"/>
-                                    <barButtonItem title="2" id="oit-bk-Bju">
-                                        <connections>
-                                            <action selector="Click2:" destination="BYZ-38-t0r" id="Nvy-jh-ToR"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vJr-E5-L1x"/>
-                                    <barButtonItem title="3" id="iiT-yC-79M">
-                                        <connections>
-                                            <action selector="Click3:" destination="BYZ-38-t0r" id="hU8-ZI-jXd"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="r1v-1V-Eat"/>
-                                    <barButtonItem title="4" id="yaU-gD-jc4">
-                                        <connections>
-                                            <action selector="Click4:" destination="BYZ-38-t0r" id="rZn-qi-INM"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="v1A-g7-31W"/>
-                                    <barButtonItem title="5" id="UDi-ay-oDG">
-                                        <connections>
-                                            <action selector="Clock5:" destination="BYZ-38-t0r" id="FMK-Ho-KZ9"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EF0-Ud-Zhu"/>
-                                    <barButtonItem title="More" id="mcB-1z-FA1">
-                                        <connections>
-                                            <action selector="ClickMore:" destination="BYZ-38-t0r" id="MkM-ck-3py"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EQG-iM-Hpx">
-                                <rect key="frame" x="0.0" y="125" width="414" height="720"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemDetailCell" rowHeight="126" id="9dt-HP-h67" customClass="ItemDetailCell" customModule="Five_Levels_of_Covid" customModuleProvider="target">
@@ -119,12 +78,54 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rwv-ui-5YE">
+                                <rect key="frame" x="0.0" y="818" width="421" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="1" id="wLR-D5-XOo">
+                                        <connections>
+                                            <action selector="Click1:" destination="BYZ-38-t0r" id="Jn4-B8-wBW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oSL-so-7GL"/>
+                                    <barButtonItem title="2" id="oit-bk-Bju">
+                                        <connections>
+                                            <action selector="Click2:" destination="BYZ-38-t0r" id="Nvy-jh-ToR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vJr-E5-L1x"/>
+                                    <barButtonItem title="3" id="iiT-yC-79M">
+                                        <connections>
+                                            <action selector="Click3:" destination="BYZ-38-t0r" id="hU8-ZI-jXd"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="r1v-1V-Eat"/>
+                                    <barButtonItem title="4" id="yaU-gD-jc4">
+                                        <connections>
+                                            <action selector="Click4:" destination="BYZ-38-t0r" id="rZn-qi-INM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="v1A-g7-31W"/>
+                                    <barButtonItem title="5" id="UDi-ay-oDG">
+                                        <connections>
+                                            <action selector="Clock5:" destination="BYZ-38-t0r" id="FMK-Ho-KZ9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EF0-Ud-Zhu"/>
+                                    <barButtonItem title="More" id="mcB-1z-FA1">
+                                        <connections>
+                                            <action selector="ClickMore:" destination="BYZ-38-t0r" id="MkM-ck-3py"/>
+                                            <segue destination="V4i-hn-Y31" kind="show" id="W8n-0u-y00"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EQG-iM-Hpx" firstAttribute="top" secondItem="a0n-Lg-YAj" secondAttribute="bottom" constant="8" symbolic="YES" id="5iH-6W-xag"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EQG-iM-Hpx" secondAttribute="bottom" constant="17" id="7DF-6S-cRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EQG-iM-Hpx" secondAttribute="bottom" constant="44" id="7DF-6S-cRY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a0n-Lg-YAj" secondAttribute="trailing" id="8Nt-v0-9WA"/>
                             <constraint firstItem="a0n-Lg-YAj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jvd-gy-mBL"/>
                             <constraint firstItem="EQG-iM-Hpx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mP6-Ho-0ej"/>
@@ -132,6 +133,7 @@
                             <constraint firstItem="a0n-Lg-YAj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xuT-3R-g6T"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="opi-40-hZM"/>
                     <connections>
                         <outlet property="theTable" destination="EQG-iM-Hpx" id="aiL-wm-grc"/>
                         <outlet property="titleBanner" destination="a0n-Lg-YAj" id="KOX-fh-GdG"/>
@@ -139,6 +141,64 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+        </scene>
+        <!--More Info View Controller-->
+        <scene sceneID="tWd-3Z-nEB">
+            <objects>
+                <viewController id="V4i-hn-Y31" customClass="MoreInfoViewController" customModule="Five_Levels_of_Covid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YkP-Wo-YcS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzI-te-U4m">
+                                <rect key="frame" x="20" y="125" width="120" height="12"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Level 5  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Nx-VIH">
+                                <rect key="frame" x="148" y="117" width="104" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country wide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvU-Jp-sSZ">
+                                <rect key="frame" x="274" y="121" width="120" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rbf-Ya-9Nq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5GZ-wm-9bZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47p-YL-RbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818.840579710145" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="i8j-ax-NeA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GhT-SD-USb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FKU-05-wjK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wgf-jX-4pI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPv-PS-cUD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
@@ -150,6 +210,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
