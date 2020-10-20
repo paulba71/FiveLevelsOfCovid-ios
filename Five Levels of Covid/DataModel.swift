@@ -8,7 +8,7 @@
 import Foundation
 
 // Level 1
-let level1FirstItem = ["10", "50", "100", "100", "100", "200", "Open", "Open"]
+let level1FirstItem = ["10", "50", "100", "100", "100", "200", "Open", "Open", "No", "Travel"]
 
 let level1SecondItem = ["from 3 households",
                          "outside your home or garden",
@@ -17,9 +17,11 @@ let level1SecondItem = ["from 3 households",
                          "indoor",
                          "outdoor",
                          "with protective measures in place",
-                         ""]
+                         "",
+                         "restrictions",
+                         "off-peak hours or walk/cycle, if possible"]
 
-let level1Image = ["Visitors", "Gatherings", "Weddings", "Indoor", "Sports", "Sports", "cafes", "pubs"]
+let level1Image = ["Visitors", "Gatherings", "Weddings", "Indoor", "Sports", "Sports", "cafes", "pubs", "pubs", "pubs"]
 
 // Level 2
 let level2FirstItem = ["6", "6", "15", "50", "50", "50", "100", "Open", "Open"]
